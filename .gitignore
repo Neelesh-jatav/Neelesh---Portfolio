@@ -1,0 +1,14 @@
+node_modules/
+.env
+.env.local
+npm-debug.log
+dist/
+build/
+.DS_Store
+media/
+client/node_modules/
+server/node_modules/
+client/dist/
+client/build/
+.vscode/
+*.log
