@@ -6,7 +6,7 @@ const projects = [
     eyebrow: "VigilaxAI",
     description: "",
     imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    videoUrl: "https://neelesh-portfolio.onrender.com/media/vigilaxai.mp4",
+    videoUrl: "",
     badgeUrl: "",
     cta: "View Case Study →",
     projectUrl: "https://vigilaxai.onrender.com",
