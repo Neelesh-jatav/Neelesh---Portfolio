@@ -35,7 +35,7 @@ const projects = [
     videoUrl: "https://neelesh-portfolio.onrender.com/media/resumeforge.mp4",
     badgeUrl: "",
     cta: "Build Your Resume →",
-    projectUrl: "https://elite-rentals-peach.vercel.app/",
+    projectUrl: "https://resumeforge-8olt.onrender.com/",
     githubUrl: "https://github.com/Neelesh-jatav/-ResumeForge",
     tags: ["React", "PDF Generation", "Easy UI"]
   },
@@ -47,8 +47,8 @@ const projects = [
     videoUrl: "",
     badgeUrl: "",
     cta: "View Case Study →",
-    projectUrl: "#",
-    githubUrl: "https://github.com/Neelesh-jatav",
+    projectUrl: "https://github.com/Neelesh-jatav/E-commerce",
+    githubUrl: "https://github.com/Neelesh-jatav/E-commerce",
     tags: ["React", "Framer Motion"]
   },
 
@@ -61,7 +61,7 @@ const projects = [
     videoUrl: "https://neelesh-portfolio.onrender.com/media/elite%20rentals.mp4",
     badgeUrl: "",
     cta: "View Case Study →",
-    projectUrl: "#",
+    projectUrl: "https://elite-rentals-peach.vercel.app/",
     githubUrl: "https://github.com/Neelesh-jatav/Elite-Rentals",
     tags: ["React", "Framer Motion", "Routing", "Responsive UI"]
   },
@@ -85,7 +85,7 @@ const projects = [
     videoUrl: "https://neelesh-portfolio.onrender.com/media/libraryms.mp4",
     badgeUrl: "",
     cta: "View Case Study →",
-    projectUrl: "#",
+    projectUrl: "https://github.com/Neelesh-jatav/Library-Management-System-",
     githubUrl: "https://github.com/Neelesh-jatav/Library-Management-System-",
     tags: ["React", "Node.js", "MongoDB"]
   }
