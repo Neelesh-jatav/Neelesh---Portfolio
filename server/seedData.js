@@ -35,7 +35,7 @@ const projects = [
     videoUrl: "https://neelesh-portfolio.onrender.com/media/resumeforge.mp4",
     badgeUrl: "",
     cta: "Build Your Resume →",
-    projectUrl: "#",
+    projectUrl: "https://elite-rentals-peach.vercel.app/",
     githubUrl: "https://github.com/Neelesh-jatav/-ResumeForge",
     tags: ["React", "PDF Generation", "Easy UI"]
   },
