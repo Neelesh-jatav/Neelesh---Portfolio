@@ -1,37 +1,43 @@
 // Shared seed data for projects
 const projects = [
+  // Top projects
   {
-    title: "A full-stack rental booking platform with secure authentication and modern UI.",
-    eyebrow: "Elite Rentals",
+    title: "Integrated surveillance and defense platform with AI-powered detection and live monitoring.",
+    eyebrow: "VigilaxAI",
     description: "",
-    imageUrl: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    videoUrl: "http://localhost:5000/media/elite%20rentals.mp4",
+    imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    videoUrl: "http://localhost:5000/media/vigilaxai.mp4",
     badgeUrl: "",
     cta: "View Case Study →",
-    projectUrl: "#",
-    tags: ["React", "Framer Motion", "Routing", "Responsive UI"]
+    projectUrl: "https://vigilaxai.onrender.com",
+    githubUrl: "https://github.com/Neelesh-jatav/VigilaxAI",
+    tags: ["Python Flask", "MERN", "AI", "OpenCV", "YOLO"]
   },
   {
-    title: "Answer a few questions and let our AI website builder do the rest.",
-    eyebrow: "Blueprint AI Builder",
+    title: "A comprehensive platform for community engagement and civic management.",
+    eyebrow: "CivicConnect",
     description: "",
-    imageUrl: "https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    videoUrl: "https://media-www.sqspcdn.com/images/pages/homepage-2025/get-started/blueprint-ai.mp4",
-    badgeUrl: "https://media-www.sqspcdn.com/images/pages/flagship/blueprint-ai/design-partner/time-logo-500w.png",
-    cta: "Build with AI →",
-    projectUrl: "#",
-    tags: ["React", "AI", "Node.js"]
-  },
-  {
-    title: "Crafted by our designers, customized by AI—just for your business.",
-    eyebrow: "Professional Templates",
-    description: "",
-    imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    videoUrl: "https://media-www.sqspcdn.com/images/pages/homepage-2025/get-started/templates.mp4",
+    imageUrl: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    videoUrl: "http://localhost:5000/media/civicconnect.mp4",
     badgeUrl: "",
-    cta: "Browse website templates →",
+    cta: "View Case Study →",
+    projectUrl: "https://civic-connect-steel.vercel.app/",
+    githubUrl: "https://github.com/Neelesh-jatav/CivicConnect",
+    tags: ["React", "Node.js", "MongoDB"]
+  },
+
+  // Intermediate work
+  {
+    title: "Create professional resumes in seconds with our easy-to-use builder.",
+    eyebrow: "ResumeForge",
+    description: "",
+    imageUrl: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    videoUrl: "http://localhost:5000/media/resumeforge.mp4",
+    badgeUrl: "",
+    cta: "Build Your Resume →",
     projectUrl: "#",
-    tags: ["Vue.js", "Firebase"]
+    githubUrl: "https://github.com/Neelesh-jatav/-ResumeForge",
+    tags: ["React", "PDF Generation", "Easy UI"]
   },
   {
     title: "A full-stack e-commerce solution with payment integration.",
@@ -42,8 +48,48 @@ const projects = [
     badgeUrl: "",
     cta: "View Case Study →",
     projectUrl: "#",
+    githubUrl: "https://github.com/Neelesh-jatav",
     tags: ["React", "Framer Motion"]
+  },
+
+  // Beginner work
+  {
+    title: "A full-stack rental booking platform with secure authentication and modern UI.",
+    eyebrow: "Elite Rentals",
+    description: "",
+    imageUrl: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    videoUrl: "http://localhost:5000/media/elite%20rentals.mp4",
+    badgeUrl: "",
+    cta: "View Case Study →",
+    projectUrl: "#",
+    githubUrl: "https://github.com/Neelesh-jatav/Elite-Rentals",
+    tags: ["React", "Framer Motion", "Routing", "Responsive UI"]
+  },
+  {
+    title: "Stream your favorite music with a sleek, responsive music player inspired by Spotify's modern interface.",
+    eyebrow: "Spotify Clone",
+    description: "",
+    imageUrl: "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    videoUrl: "http://localhost:5000/media/spotifyClone.mp4",
+    badgeUrl: "",
+    cta: "Listen to the Demo →",
+    projectUrl: "https://neelesh-jatav.github.io/spotify/#",
+    githubUrl: "https://github.com/Neelesh-jatav/spotify",
+    tags: ["React", "Node.js", "Audio Streaming", "MongoDB"]
+  },
+  {
+    title: "Automate book tracking and member management with this robust library system.",
+    eyebrow: "Library Management System",
+    description: "",
+    imageUrl: "https://images.unsplash.com/photo-1507842217153-e212234b6605?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    videoUrl: "http://localhost:5000/media/libraryms.mp4",
+    badgeUrl: "",
+    cta: "View Case Study →",
+    projectUrl: "#",
+    githubUrl: "https://github.com/Neelesh-jatav/Library-Management-System-",
+    tags: ["React", "Node.js", "MongoDB"]
   }
+  
 ];
 
 module.exports = projects;

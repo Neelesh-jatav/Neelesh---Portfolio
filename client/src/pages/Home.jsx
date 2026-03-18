@@ -6,6 +6,7 @@ import './Home.css';
 const Home = () => {
   const [projects, setProjects] = useState([]);
   const [videoErrorIds, setVideoErrorIds] = useState({});
+  const defaultGithubUrl = 'https://github.com/neelesh-jatav';
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -80,47 +81,64 @@ const Home = () => {
 
           <div className="ai-cards">
             {projects.map((project, index) => (
-              <motion.a
-                href="#"
-                key={project._id}
+              <motion.article
+                key={project._id || project.eyebrow || index}
                 className="ai-card"
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.15 }}
                 viewport={{ once: true }}
               >
-                <div className="ai-card-media">
-                  {project.videoUrl && !(videoErrorIds[project._id || index]) ? (
-                    <video
-                      autoPlay
-                      muted
-                      loop
-                      playsInline
-                      poster={project.imageUrl}
-                      onError={() => setVideoErrorIds(prev => ({ ...prev, [project._id || index]: true }))}
-                    >
-                      <source src={project.videoUrl} type="video/mp4" />
-                      Your browser does not support the video tag.
-                    </video>
-                  ) : (
-                    <img src={project.imageUrl} alt={project.title} />
-                  )}
-                  <div className="ai-overlay"></div>
-                </div>
-
-                {project.badgeUrl && (
-                  <div className="ai-badge-container">
-                    <img src={project.badgeUrl} alt="Badge" className="ai-badge" />
+                <a
+                  href={project.projectUrl || '#'}
+                  className="ai-card-main-link"
+                  target={project.projectUrl && project.projectUrl !== '#' ? '_blank' : undefined}
+                  rel={project.projectUrl && project.projectUrl !== '#' ? 'noopener noreferrer' : undefined}
+                >
+                  <div className="ai-card-media">
+                    {project.videoUrl && !(videoErrorIds[project._id || index]) ? (
+                      <video
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        poster={project.imageUrl}
+                        onError={() => setVideoErrorIds((prev) => ({ ...prev, [project._id || index]: true }))}
+                      >
+                        <source src={project.videoUrl} type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
+                    ) : (
+                      <img src={project.imageUrl} alt={project.title} />
+                    )}
+                    <div className="ai-overlay"></div>
                   </div>
-                )}
 
-                <div className="ai-card-content">
-                  {project.eyebrow && <h3 className="ai-eyebrow">{project.eyebrow}</h3>}
-                  <p className="ai-title">{project.title}</p>
-                  {project.description && <p className="ai-description">{project.description}</p>}
-                  <span className="ai-cta">{project.cta || "View Project →"}</span>
-                </div>
-              </motion.a>
+                  {project.badgeUrl && (
+                    <div className="ai-badge-container">
+                      <img src={project.badgeUrl} alt="Badge" className="ai-badge" />
+                    </div>
+                  )}
+
+                  <div className="ai-card-content">
+                    {project.eyebrow && <h3 className="ai-eyebrow">{project.eyebrow}</h3>}
+                    <p className="ai-title">{project.title}</p>
+                    {project.description && <p className="ai-description">{project.description}</p>}
+                    <span className="ai-cta">{project.cta || 'View Project →'}</span>
+                  </div>
+                </a>
+
+                <a
+                  href={project.githubUrl || defaultGithubUrl}
+                  className="ai-github-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Open ${project.eyebrow || 'project'} repository`}
+                  title="Open GitHub repository"
+                >
+                  🔗 GitHub Repo
+                </a>
+              </motion.article>
             ))}
           </div>
         </div>

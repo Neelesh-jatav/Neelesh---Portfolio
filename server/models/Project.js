@@ -9,9 +9,11 @@ const ProjectSchema = new mongoose.Schema({
   description: String,
   imageUrl: String,
   videoUrl: String,
+  images: [String],
   badgeUrl: String,
   cta: String,
   projectUrl: String,
+  githubUrl: String,
   tags: [String],
 });
 

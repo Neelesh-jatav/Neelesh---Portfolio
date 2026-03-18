@@ -1,0 +1,54 @@
+.drives-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 0.75rem;
+}
+
+.drives-subtitle {
+  color: #555;
+  max-width: 760px;
+  margin-bottom: 2rem;
+}
+
+.drives-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(358px, 1fr));
+  gap: 1.25rem;
+}
+
+.drive-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.25rem;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+
+.drive-name {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.drive-description {
+  color: #374151;
+  margin-bottom: 0.9rem;
+}
+
+.drive-updated {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.drive-link {
+  display: inline-block;
+  margin-top: 0.25rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+  background: #4f6df5;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+
+.drive-link:hover {
+  opacity: 0.9;
+}

@@ -35,17 +35,38 @@
 .social-links {
   display: flex;
   gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    padding: 3.5rem 0 2rem;
+  }
+
+  .footer-content h3 {
+    font-size: 1.75rem;
+  }
 }
 
 @media (max-width: 768px) {
+  .footer-container {
+    gap: 2rem;
+  }
+
   .footer-bottom {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
     text-align: center;
+    padding-top: 1.5rem;
   }
 
   .footer-content h3 {
     font-size: 1.5rem;
+  }
+
+  .email-link {
+    font-size: 1rem;
   }
 }
 
@@ -63,5 +84,9 @@
   
   .footer-content h3 {
     font-size: 1.5rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.85rem;
   }
 }

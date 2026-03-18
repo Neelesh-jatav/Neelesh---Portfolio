@@ -14,7 +14,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/portfolio
     const projects = require('./seedData');
 
     await Project.insertMany(projects);
-    console.log('Seeded projects successfully (from seedData.js)');
+    console.log(`Seeded ${projects.length} projects successfully (from seedData.js)`);
     
     mongoose.connection.close();
   })

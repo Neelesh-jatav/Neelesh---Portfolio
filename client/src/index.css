@@ -45,13 +45,13 @@ img {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1520px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 3rem;
 }
 
 .section {
-  padding: 5rem 0;
+  padding: 1rem 0;
 }
 
 .grid {
@@ -67,5 +67,21 @@ img {
   
   .section {
     padding: 3rem 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 2rem;
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
   }
 }

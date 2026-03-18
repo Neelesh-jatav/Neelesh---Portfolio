@@ -17,7 +17,15 @@ app.use('/media', express.static(path.join(__dirname, '..', 'media')));
 
 // Database Connection
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/portfolio')
-  .then(() => console.log('MongoDB Connected'))
+  .then(async () => {
+    console.log('MongoDB Connected');
+    
+    // Always sync database with seedData.js to ensure latest changes are reflected
+    console.log('Syncing database with seedData.js...');
+    await Project.deleteMany({});
+    await Project.insertMany(seedProjects);
+    console.log(`\x1b[32m[SUCCESS] Database synced. Total projects: ${seedProjects.length}\x1b[0m`);
+  })
   .catch(err => console.error(err));
 
 // Routes
@@ -40,6 +48,7 @@ app.post('/api/projects', async (req, res) => {
     badgeUrl: req.body.badgeUrl,
     cta: req.body.cta,
     projectUrl: req.body.projectUrl,
+    githubUrl: req.body.githubUrl,
     tags: req.body.tags
   });
 
