@@ -3,7 +3,12 @@ import { motion } from 'framer-motion';
 import profileImg from '../assets/profile.png';
 import './Home.css';
 
-const API_BASE = (import.meta.env.VITE_API_URL || 'http://localhost:5000').replace(/\/$/, '');
+const defaultApiBase =
+  typeof window !== 'undefined' && window.location.hostname === 'localhost'
+    ? 'http://localhost:5000'
+    : 'https://neelesh-portfolio.onrender.com';
+
+const API_BASE = (import.meta.env.VITE_API_URL || defaultApiBase).replace(/\/$/, '');
 
 const Home = () => {
   const [projects, setProjects] = useState([]);
