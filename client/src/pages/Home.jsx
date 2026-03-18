@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import profileImg from '../assets/profile.png';
 import './Home.css';
 
+const API_BASE = (import.meta.env.VITE_API_URL || 'http://localhost:5000').replace(/\/$/, '');
+
 const Home = () => {
   const [projects, setProjects] = useState([]);
   const [videoErrorIds, setVideoErrorIds] = useState({});
@@ -12,7 +14,7 @@ const Home = () => {
     const fetchProjects = async () => {
       try {
         // Try to fetch from backend
-        const response = await fetch('http://localhost:5000/api/projects');
+        const response = await fetch(`${API_BASE}/api/projects`);
         const data = await response.json();
         const sanitize = (items) => items.map(p => ({
           ...p,
@@ -25,8 +27,8 @@ const Home = () => {
           setProjects(sanitize(data));
         } else {
            // Seed if empty or failed
-           await fetch('http://localhost:5000/api/seed');
-           const responseAfterSeed = await fetch('http://localhost:5000/api/projects');
+           await fetch(`${API_BASE}/api/seed`);
+           const responseAfterSeed = await fetch(`${API_BASE}/api/projects`);
            const seeded = await responseAfterSeed.json();
            setProjects(sanitize(seeded));
         }
