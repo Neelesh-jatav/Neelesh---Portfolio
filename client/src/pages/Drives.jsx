@@ -28,7 +28,7 @@ const uploadedDrives = [
     name: '🤖 VigilaxAI',
     description: 'VigilaxAI project resources, docs, and deployment assets.',
     updatedAt: 'Mar 06, 2026',
-    driveLink: 'https://drive.google.com/drive/folders/',
+    driveLink: 'https://drive.google.com/file/d/133o72hQD4mUsiMv6xUL1gcGTxaxaDEWi/view?usp=sharing',
   },
   {
     id: 5,
