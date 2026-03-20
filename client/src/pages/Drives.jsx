@@ -7,7 +7,7 @@ const uploadedDrives = [
     name: '📄 Resume',
     description: 'Career files and info.',
     updatedAt: 'March 06, 2026',
-    driveLink: 'https://drive.google.com/file/d/1FTFFZmUoSHZEkcFvarmjEljNjHzA9Ufm/view?usp=sharing',
+    driveLink: 'https://drive.google.com/file/d/1sHfEiNBg-5vb5zVyPQ2szfeOTwVk76mD/view?usp=sharing',
   },
   {
     id: 2,
