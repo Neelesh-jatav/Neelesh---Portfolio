@@ -9,7 +9,7 @@ const projects = [
     videoUrl: "https://neelesh-portfolio.onrender.com/media/VigilaxAI.mp4",
     badgeUrl: "",
     cta: "View Case Study →",
-    projectUrl: "https://vigilaxai.onrender.com",
+    projectUrl: "https://vigilaxai-f.onrender.com",
     githubUrl: "https://github.com/Neelesh-jatav/VigilaxAI",
     tags: ["Python Flask", "MERN", "AI", "OpenCV", "YOLO"]
   },
